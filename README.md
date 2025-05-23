@@ -34,3 +34,22 @@ Este é um projeto simples de terminal que simula uma sorveteria utilizando **Py
 2. Execute o script principal:
    ```bash
    python src/main.py
+
+
+---
+
+## 📐 Diagrama da Sorveteria
+
+Para entender melhor a estrutura do projeto, temos o arquivo de diagrama `sorveteria.drawio`, que mostra o fluxo e a relação entre as classes.
+
+> **Importante:** O GitHub não exibe diretamente arquivos `.drawio`. Para visualizar, faça o download do arquivo e abra no [draw.io](https://app.diagrams.net/) ou em outro editor compatível.
+
+### Visualização do Diagrama
+
+Para facilitar a visualização, incluímos a imagem exportada do diagrama abaixo:
+
+![Diagrama da Sorveteria](img/diagrama.png)
+
+> Caso queira atualizar o diagrama, edite o `sorveteria.drawio` e gere uma nova imagem para substituir esta.
+
+---
