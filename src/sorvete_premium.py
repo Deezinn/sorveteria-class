@@ -2,19 +2,19 @@ from sorvete import Sorvete
 
 class SorvetePremium(Sorvete):
     def __init__(self, suporte=None, cobertura=None):
-        super().__init__(preco=15, suporte=suporte, cobertura=cobertura)
+        super().__init__(preco=20, suporte=suporte, cobertura=cobertura)
 
     @property
     def sorvete_casquinha(self):
-        return self._preco, 'casquinha'
+        return 'R$20 do sorvete e R$2 da casquinha.'
 
     @property
     def sorvete_copinho(self):
-        return self._preco, 'copinho'
+        return 'R$20 do sorvete e R$1 do copinho.'
 
     @property
     def sorvete_cobertura(self):
-        return self._preco, self._cobertura
+        return 'R$20 do sorvete e R$1 de acrescimo se for simples ou R$2 se for especial.'
 
     @sorvete_casquinha.setter
     def sorvete_casquinha(self, adicional):
@@ -34,11 +34,5 @@ class SorvetePremium(Sorvete):
         elif cobertura == 'especial':
             self._preco += 2
         else:
-            print('erro')
-            
+            raise ValueError("Cobertura deve ser 'simples' ou 'especial'")
         self._cobertura = cobertura
-
-
-sp = SorvetePremium()
-sp.sorvete_cobertura = 'simples'
-print(sp.sorvete_cobertura)
