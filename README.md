@@ -32,4 +32,5 @@ Este é um projeto simples de terminal que simula uma sorveteria utilizando **Py
    cd sorveteria-poo
 
 2. Execute o script principal:
-   ```python src/main.py
+   ```bash
+   python src/main.py
